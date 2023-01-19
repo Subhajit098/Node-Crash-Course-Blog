@@ -1,6 +1,7 @@
 const { render } = require("ejs");
 const express=require("express");
 const mongoose=require("mongoose");
+require("dotenv").config();
 // creating an instance of an express function.
 // express app
 const app=express(); 
@@ -12,7 +13,7 @@ const blogRoutes = require("./routes/blogRoutes")
 // This is the connection string that we are gonna be using to connect to our database.
 // Just replace the username with your current username and the password with the current password. Also change the database name "test" to the database name . Here its the MyDatabaseCluster
 // const dbURI="mongodb+srv://<username>:<password>@mydatabasecluster.ftg2hjf.mongodb.net/?retryWrites=true&w=majority";
-const dbURI="mongodb+srv://random00:test1234@mydatabasecluster.ftg2hjf.mongodb.net/node-tuts?retryWrites=true&w=majority"
+const dbURI=process.env.DB_URI;
 
 
 // Using mongoose to connect to the database
