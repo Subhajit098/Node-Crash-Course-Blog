@@ -1,0 +1,16 @@
+# Default ignored files
+node_modules
+.idea
+
+EJS
+Express
+EXPRESS_ROUTER&MVC
+GET_POST_DELETE_PUT
+Middleware
+Mongooese_ModelsAndSchemas
+NodeBasics
+NPM
+Practice_Node
+serverTest.js
+requestAndResponse
+ClientsAndServers
